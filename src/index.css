@@ -1,0 +1,18 @@
+/* @import "./components/styles/range-slider.css"; NOTE: it is possible but i advise against such hack(ish) customization */
+@import "./styles/range-slider-simple.css";
+@import "./styles/top-navbar.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply min-h-screen bg-[#F2F5F7] font-inter dark:bg-[#283C49] dark:text-white;
+  }
+
+  main {
+    @apply pt-topnavbar lg:pl-sidebar; /* to account for the fixed top navbar */
+  }
+}

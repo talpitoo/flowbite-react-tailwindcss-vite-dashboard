@@ -1,0 +1,7 @@
+@layer components {
+  input[type="range"] {
+    @apply accent-[#ffb600];
+
+    appearance: progress-bar;
+  }
+}
