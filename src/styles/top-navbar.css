@@ -1,4 +1,5 @@
-/* NOTE: this is for handling the sidebar expanded layout and html/body overflow */
+/* NOTE: this is for handling the top navbar hamburger expanded layout and html/body overflow */
+/* NOTE: additional/custom/inline TailwindCSS classes */
 
 @layer components {
   .menu-expanded {
@@ -6,10 +7,6 @@
 
     [data-testid="flowbite-navbar-collapse"] {
       @apply fixed bottom-0 left-0 right-0 top-topnavbar overflow-auto bg-sidebar-light px-2 dark:bg-sidebar-dark;
-
-      aside {
-        @apply min-h-0;
-      }
     }
   }
 }

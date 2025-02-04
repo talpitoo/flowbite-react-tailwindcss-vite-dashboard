@@ -1,5 +1,22 @@
-import { Accordion } from "flowbite-react";
-
+/**
+ * Custom Flowbite theme configuration for PrimeRevenue.
+ * Defines styles for various Flowbite components such as buttons and sidebar.
+ * https://flowbite-react.com/docs/customize/theme#option-2-create-a-custom-theme
+ *
+ * @constant
+ * @type {Object}
+ * @property {Object} button - Custom styles for https://flowbite-react.com/docs/components/button#theme.
+ * @property {Object} sidebar - Custom styles for https://flowbite-react.com/docs/components/sidebar#theme.
+ * @property {Object} navbar - Custom styles for https://flowbite-react.com/docs/components/navbar#theme.
+ * @property {Object} card - Custom styles for https://flowbite-react.com/docs/components/card#theme.
+ * @property {Object} dropdown - Custom styles for https://flowbite-react.com/docs/components/dropdown#theme.
+ * @property {Object} textInput - Custom styles for https://flowbite-react.com/docs/components/forms#text-input-theme.
+ * @property {Object} modal - Custom styles for https://flowbite-react.com/docs/components/modal#theme.
+ * @property {Object} alert - Custom styles for https://flowbite-react.com/docs/components/alert#theme.
+ * @property {Object} table - Custom styles for https://flowbite-react.com/docs/components/table#theme.
+ * @property {Object} badge - Custom styles for https://flowbite-react.com/docs/components/badge#theme.
+ * @property {Object} accordion - Custom styles for https://flowbite-react.com/docs/components/accordion#theme.
+ */
 const primeRevenueFlowbiteTheme = {
   button: {
     color: {

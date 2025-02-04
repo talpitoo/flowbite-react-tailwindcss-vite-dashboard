@@ -1,3 +1,4 @@
+/* NOTE: additional/custom/inline TailwindCSS classes */
 @layer components {
   input[type="range"] {
     @apply accent-[#ffb600];

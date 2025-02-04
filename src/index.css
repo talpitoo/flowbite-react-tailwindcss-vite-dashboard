@@ -6,6 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* NOTE: additional/custom/inline TailwindCSS classes */
 @layer base {
   html,
   body {

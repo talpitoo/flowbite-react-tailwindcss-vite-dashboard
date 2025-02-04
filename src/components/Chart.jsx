@@ -22,6 +22,13 @@ ChartJS.register(
   Legend,
 );
 
+/**
+ * Chart component renders a line chart with additional statistics,
+ * dropdowns for range selection, and action buttons.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered chart component.
+ */
 const Chart = () => {
   const [selectedRange, setSelectedRange] = useState("Last week");
   const data = {
@@ -58,10 +65,18 @@ const Chart = () => {
 
   return (
     <>
+      {/* 
+        NOTE: additional/custom/inline TailwindCSS classes
+          - most of the markup is custom, e.g. <div>s and <span>s but the rest is Flowbite React
+      */}
       <div className="flex items-center justify-between">
         <div>
           <div className="flex items-center text-sm text-gray-500">
             <span>Clicks</span>
+            {/* 
+              NOTE: additional/custom/inline TailwindCSS classes
+                - there is no such example of an icon triggering the tooltip but it's possible
+            */}
             <FlowbiteTooltip content="Tooltip content: TODO">
               <HiInformationCircle className="ml-1 h-3 w-3" />
             </FlowbiteTooltip>
@@ -77,6 +92,12 @@ const Chart = () => {
           </div>
           <p className="text-xl font-bold">$1.20</p>
         </div>
+        {/* 
+          NOTE: additional/custom/inline TailwindCSS classes
+            - for the outlined dropdown color="gray"...
+            - and size="sm" are used
+            - other than that it is a standard Flowbite React component
+        */}
         <Dropdown label={selectedRange} color="gray" size="sm">
           <Dropdown.Item onClick={() => setSelectedRange("Last week")}>
             Last week
@@ -89,9 +110,23 @@ const Chart = () => {
       <div className="h-48">
         <Line data={data} options={options} />
       </div>
+      {/* 
+        NOTE: additional/custom/inline TailwindCSS classes
+          - custom class .my-0 on the HR component because the parent already has gap set
+      */}
       <HR className="my-0" />
       <div>
+        {/* 
+          NOTE: additional/custom/inline TailwindCSS classes
+            - size="sm"...
+            - and color="primary" are used
+        */}
         <Button size="sm" color="primary">
+          {/* 
+            NOTE: additional/custom/inline TailwindCSS classes
+              - the icons has neagtive vertical offset .my-px to avoid larger button height
+              - this is documented in the README.md as well
+          */}
           <HiDocumentText className="-my-px mr-2 size-4" />
           View full report
         </Button>

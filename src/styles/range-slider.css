@@ -1,4 +1,5 @@
 /* NOTE: reference https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/ */
+/* NOTE: additional/custom/inline TailwindCSS classes */
 @layer components {
   /* Range Reset */
   input[type="range"] {

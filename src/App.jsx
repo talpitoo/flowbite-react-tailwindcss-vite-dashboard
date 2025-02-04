@@ -43,9 +43,20 @@ function App() {
         <header>
           <TopNavbar />
         </header>
+        {/* 
+          NOTE: additional/custom/inline TailwindCSS classes
+            - .min-h-screen and in general the <header>, <main>, <aside> are all part of the global responsive layout
+        */}
         <main className="min-h-screen">
-          {/* NOTE: adaptive sidebar layout, desktop */}
+          {/* 
+            NOTE: additional/custom/inline TailwindCSS classes
+              - adaptive sidebar layout, desktop
+          */}
           <AdaptiveSidebar desktop />
+          {/* 
+            NOTE: additional/custom/inline TailwindCSS classes
+              - custom container .mx-auto...
+          */}
           <div className="mx-auto space-y-4 p-4">
             <Breadcrumb aria-label="Default breadcrumb example">
               <Breadcrumb.Item href="#" icon={HiHome}>
@@ -54,7 +65,15 @@ function App() {
               <Breadcrumb.Item href="#">View Invoices</Breadcrumb.Item>
               <Breadcrumb.Item>Unpaid Approved Invoices</Breadcrumb.Item>
             </Breadcrumb>
+            {/* 
+              NOTE: additional/custom/inline TailwindCSS classes
+                - .overflow-hidden is added because of the nested table
+            */}
             <Card className="overflow-hidden">
+              {/* 
+                NOTE: additional/custom/inline TailwindCSS classes
+                  - `additionalContent` is custom, although very similar to the Flowbite React example
+              */}
               <Alert
                 additionalContent={
                   <>
@@ -78,6 +97,10 @@ function App() {
               >
                 <span className="font-medium">Alert heading</span>
               </Alert>
+              {/* 
+                NOTE: additional/custom/inline TailwindCSS classes
+                  - the <h4> and the <p> are custom
+              */}
               <div className="py-4">
                 <h4 className="text-lg font-semibold text-primary-blue dark:text-[#70B5EF]">
                   Unpaid Approved Invoices
@@ -88,6 +111,10 @@ function App() {
                   your business, and more.
                 </p>
               </div>
+              {/* 
+                NOTE: additional/custom/inline TailwindCSS classes
+                  - the negative offset is custom so that the table is edge-to-edge
+              */}
               <div className="-m-4 overflow-x-auto">
                 <Table hoverable>
                   <Table.Head>
@@ -98,9 +125,6 @@ function App() {
                     <Table.HeadCell>Date & Time</Table.HeadCell>
                     <Table.HeadCell>Amount</Table.HeadCell>
                     <Table.HeadCell>Status</Table.HeadCell>
-                    {/* <Table.HeadCell>
-                      <span className="sr-only">Edit</span>
-                    </Table.HeadCell> */}
                   </Table.Head>
                   <Table.Body className="divide-y">
                     <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
@@ -113,18 +137,14 @@ function App() {
                       <Table.Cell>Mar 1, 2021</Table.Cell>
                       <Table.Cell>$2999</Table.Cell>
                       <Table.Cell>
+                        {/* 
+                          NOTE: additional/custom/inline TailwindCSS classes
+                            - the badges require and additional wrapper to avoid stretching
+                        */}
                         <div className="flex flex-wrap gap-2">
                           <Badge color="success">Completed</Badge>
                         </div>
                       </Table.Cell>
-                      {/* <Table.Cell>
-                        <a
-                          href="#"
-                          className="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
-                        >
-                          Edit
-                        </a>
-                      </Table.Cell> */}
                     </Table.Row>
                     <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                       <Table.Cell className="p-4">
@@ -140,14 +160,6 @@ function App() {
                           <Badge color="failure">Cancelled</Badge>
                         </div>
                       </Table.Cell>
-                      {/* <Table.Cell>
-                        <a
-                          href="#"
-                          className="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
-                        >
-                          Edit
-                        </a>
-                      </Table.Cell> */}
                     </Table.Row>
                     <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                       <Table.Cell className="p-4">
@@ -163,14 +175,6 @@ function App() {
                           <Badge color="purple">In progress purple</Badge>
                         </div>
                       </Table.Cell>
-                      {/* <Table.Cell>
-                        <a
-                          href="#"
-                          className="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
-                        >
-                          Edit
-                        </a>
-                      </Table.Cell> */}
                     </Table.Row>
                     <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                       <Table.Cell className="p-4">
@@ -186,20 +190,16 @@ function App() {
                           <Badge color="pink">In progress pink</Badge>
                         </div>
                       </Table.Cell>
-                      {/* <Table.Cell>
-                        <a
-                          href="#"
-                          className="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
-                        >
-                          Edit
-                        </a>
-                      </Table.Cell> */}
                     </Table.Row>
                   </Table.Body>
                 </Table>
               </div>
             </Card>
             <Banner>
+              {/* 
+                NOTE: additional/custom/inline TailwindCSS classes
+                  - the banner has slight differences from the official Flowbite React example
+              */}
               <div className="relative flex w-full flex-col justify-between rounded-lg border border-gray-200 bg-white p-4 shadow-sm shadow-sm dark:border-gray-700 dark:bg-gray-800 md:flex-row">
                 <div className="mb-3 mr-4 flex flex-col items-start md:mb-0 md:flex-row md:items-center">
                   <a
@@ -229,6 +229,10 @@ function App() {
                     Open Modal{" "}
                     <HiOutlineArrowRight className="-my-px ml-2 size-4" />
                   </Button>
+                  {/* 
+                    NOTE: additional/custom/inline TailwindCSS classes
+                      - custom collapse button and positioning, slightly different than in Figma
+                  */}
                   <Banner.CollapseButton
                     color="gray"
                     className="absolute right-2 top-4 w-8 border-0 bg-transparent text-gray-500 dark:text-gray-400 md:static"
@@ -238,7 +242,15 @@ function App() {
                 </div>
               </div>
             </Banner>
+            {/* 
+              NOTE: additional/custom/inline TailwindCSS classes
+                - this is a custom layout, nesting multiple cards next to each other, following the established gap
+            */}
             <div className="flex flex-col flex-wrap gap-4 lg:flex-row lg:items-start xl:flex-nowrap">
+              {/* 
+                NOTE: additional/custom/inline TailwindCSS classes
+                  - the min widths and the .grow are custom
+              */}
               <Card className="min-w-80 grow lg:min-w-96">
                 <form className="flex flex-col gap-4">
                   <div>
@@ -287,6 +299,10 @@ function App() {
                       onChange={(e) => setSalary(e.target.value)}
                       addon={
                         <>
+                          {/* 
+                            NOTE: additional/custom/inline TailwindCSS classes
+                              - custom currency dropdown, although the dropdown itself is standard
+                          */}
                           <Dropdown
                             label="🇺🇸 USD"
                             dismissOnClick={false}
@@ -310,6 +326,10 @@ function App() {
                       value={salary}
                       onChange={(e) => setSalary(e.target.value)}
                     />
+                    {/* 
+                      NOTE: additional/custom/inline TailwindCSS classes
+                        - custom labels below the range slider
+                    */}
                     <p className="mt-2 flex justify-between text-sm text-gray-500 dark:text-gray-400">
                       <span>Min ($100)</span>
                       <span>$500</span>
@@ -318,6 +338,10 @@ function App() {
                     </p>
                   </div>
                   <div>
+                    {/* 
+                      NOTE: additional/custom/inline TailwindCSS classes
+                        - custom note for extra info
+                    */}
                     <div className="mb-2 flex items-center justify-between">
                       <Label htmlFor="comment" value="Your message" />
                       <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -342,6 +366,10 @@ function App() {
                 <Chart />
               </Card>
               <Card className="grow">
+                {/* 
+                  NOTE: additional/custom/inline TailwindCSS classes
+                    - using the `flush` option to remove the borders, then style the content centrally from src/themes/primeRevenueFlowbiteTheme.js
+                */}
                 <Accordion flush>
                   <Accordion.Panel>
                     <Accordion.Title>What is Flowbite?</Accordion.Title>
@@ -434,7 +462,10 @@ function App() {
               </Card>
             </div>
 
-            {/* NOTE: example of blog-like textual content */}
+            {/* 
+              NOTE: additional/custom/inline TailwindCSS classes
+                - example of blog-like textual content, not used
+            */}
             {/* <div className="prose max-w-none">
               <h2>Subtitle</h2>
               <h3>Typography test</h3>
@@ -489,6 +520,10 @@ function App() {
             </div>
           </Modal.Body>
           <Modal.Footer>
+            {/* 
+              NOTE: additional/custom/inline TailwindCSS classes
+                - dark:text-white is added because in Figma it was an exception
+            */}
             <Button
               onClick={() => setOpenModal(false)}
               size="sm"
@@ -497,9 +532,6 @@ function App() {
             >
               Close
             </Button>
-            {/* <Button color="gray" onClick={() => setOpenModal(false)}>
-              Decline
-            </Button> */}
           </Modal.Footer>
         </Modal>
       </Flowbite>

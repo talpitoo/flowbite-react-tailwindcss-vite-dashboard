@@ -7,8 +7,18 @@ import LogoBlack from "/logo-PrimeRevenue-Alt-Black.svg";
 import LogoWhite from "/logo-PrimeRevenue-Alt-White.svg";
 import { HiOutlineSearch } from "react-icons/hi";
 
+/**
+ * TopNavbar component renders a fixed top navigation bar with logo, 
+ * a dark mode toggle, and a collapsible menu.
+ * It has a nested `<AdaptiveSidebar mobile />` component for mobile layout.
+ * It also observes the navbar collapse state to manage `.menu-expanded` class on `<html>`.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered top navigation bar.
+ */
 export function TopNavbar() {
-  // NOTE: this is for handling the sidebar expanded layout and html/body overflow
+  // NOTE: additional/custom/inline TailwindCSS classes
+  //   - this is for handling the sidebar expanded layout and html/body overflow
   useEffect(() => {
     const collapseEl = document.querySelector(
       "[data-testid='flowbite-navbar-collapse']",
@@ -29,6 +39,10 @@ export function TopNavbar() {
 
   return (
     <>
+      {/* 
+        NOTE: additional/custom/inline TailwindCSS classes
+          - the fixed positioning is custom, part of the global responsive layout
+      */}
       <Navbar fluid className="fixed left-0 right-0 top-0 z-50">
         <Navbar.Brand href="https://flowbite-react.com" className="mx-3">
           <img src={LogoWhite} alt="PrimeRevenue" className="h-11" />
@@ -39,6 +53,11 @@ export function TopNavbar() {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
+          {/* 
+            NOTE: additional/custom/inline TailwindCSS classes
+              - the search form is custom
+              - both the text input and the button have additional custom classes
+          */}
           <form className="relative mb-4 flex items-center space-x-2 p-2.5 lg:order-1 lg:mx-8 lg:mb-0 lg:p-0">
             <TextInput
               id="search"
@@ -67,7 +86,11 @@ export function TopNavbar() {
           <Navbar.Link href="#">Team</Navbar.Link>
           <Navbar.Link href="#">Contact</Navbar.Link>
 
-          {/* NOTE: adaptive sidebar layout, mobile */}
+          {/* 
+            NOTE: additional/custom/inline TailwindCSS classes
+              - adaptive sidebar layout, mobile
+              - it is inserted/injected here as adaptive markup
+          */}
           <AdaptiveSidebar mobile />
         </Navbar.Collapse>
       </Navbar>

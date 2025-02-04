@@ -6,7 +6,7 @@ React + Vite + Flowbite React + TailwindCSS + Chart.js, with HMR and some ESLint
 
 ## 🔗 Demo
 
-https://todo.vercel.app/
+https://flowbite-react-tailwindcss-vite-dashboard.vercel.app/
 
 ## 📋 Requirements
 
@@ -14,8 +14,8 @@ https://todo.vercel.app/
 
 ## 💾 Installation
 
-1. Clone the repository: `git clone git@github.com:PrimeRevenue/primerevenueui-flowbite-poc.git`
-2. Navigate to the project directory: `cd primerevenueui-flowbite-poc`
+1. Clone the repository: `git clone git@github.com:talpitoo/flowbite-react-tailwindcss-vite-dashboard.git`
+2. Navigate to the project directory: `cd flowbite-react-tailwindcss-vite-dashboard`
 3. Install dependencies: `npm install`
 
 ## 📝 Usage
