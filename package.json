@@ -1,26 +1,10 @@
 {
-  "name": "primerevenueui-flowbite-poc",
+  "name": "flowbite-react-poc",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "author": "PrimeRevenue",
+  "author": "talpitoo",
   "contributors": [
-    {
-      "name": "PrimeRevenue",
-      "url": "https://primerevenue.com/"
-    },
-    {
-      "name": "Christine Duong",
-      "url": "cduong@primerevenue.com"
-    },
-    {
-      "name": "Kae Sluder",
-      "url": "ksluder@primerevenue.com"
-    },
-    {
-      "name": "Ondrej Barcak",
-      "url": "obarcak@primerevenue.com"
-    },
     {
       "name": "Tóth Tamás",
       "url": "https://talpitoo.com/"

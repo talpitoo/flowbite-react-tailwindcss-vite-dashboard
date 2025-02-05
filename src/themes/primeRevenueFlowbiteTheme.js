@@ -1,5 +1,5 @@
 /**
- * Custom Flowbite theme configuration for PrimeRevenue.
+ * Custom Flowbite theme configuration for MyCompany.
  * Defines styles for various Flowbite components such as buttons and sidebar.
  * https://flowbite-react.com/docs/customize/theme#option-2-create-a-custom-theme
  *

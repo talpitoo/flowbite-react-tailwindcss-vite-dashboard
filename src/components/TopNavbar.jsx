@@ -3,8 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Flowbite } from "flowbite-react";
 import { Button, Navbar, TextInput, DarkThemeToggle } from "flowbite-react";
 import AdaptiveSidebar from "./AdaptiveSidebar";
-import LogoBlack from "/logo-PrimeRevenue-Alt-Black.svg";
-import LogoWhite from "/logo-PrimeRevenue-Alt-White.svg";
+import LogoFlowbite from "/logo-flowbite.svg";
 import { HiOutlineSearch } from "react-icons/hi";
 
 /**
@@ -45,7 +44,8 @@ export function TopNavbar() {
       */}
       <Navbar fluid className="fixed left-0 right-0 top-0 z-50">
         <Navbar.Brand href="https://flowbite-react.com" className="mx-3">
-          <img src={LogoWhite} alt="PrimeRevenue" className="h-11" />
+          <img src={LogoFlowbite} alt="MyCompany" className="h-11" />
+          <span className="text-white ml-4">Flowbite React</span>
         </Navbar.Brand>
         <div className="flex space-x-2 lg:order-2">
           <DarkThemeToggle />
@@ -81,9 +81,9 @@ export function TopNavbar() {
           <Navbar.Link href="#" active>
             Company
           </Navbar.Link>
-          <Navbar.Link href="#">Marketplace</Navbar.Link>
+          {/* <Navbar.Link href="#">Marketplace</Navbar.Link> */}
           <Navbar.Link href="#">Features</Navbar.Link>
-          <Navbar.Link href="#">Team</Navbar.Link>
+          {/* <Navbar.Link href="#">Team</Navbar.Link> */}
           <Navbar.Link href="#">Contact</Navbar.Link>
 
           {/* 

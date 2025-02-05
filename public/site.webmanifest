@@ -1,6 +1,6 @@
 {
-  "name": "PrimeRevenue",
-  "short_name": "PrimeRevenue",
+  "name": "MyCompany",
+  "short_name": "MyCompany",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

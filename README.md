@@ -1,6 +1,6 @@
-# PrimeRevenue Flowbite/TailwindCSS POC
+# MyCompany Flowbite/TailwindCSS POC
 
-![primerevenue](https://primerevenue.com/wp-content/uploads/2019/03/PrimeRevenue-logo-color-250x69.png)
+![flowbite-react-poc](https://flowbite-react.com/favicon.svg)
 
 React + Vite + Flowbite React + TailwindCSS + Chart.js, with HMR and some ESLint rules.
 
